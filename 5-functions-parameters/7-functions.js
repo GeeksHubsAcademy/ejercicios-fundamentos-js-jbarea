@@ -1,13 +1,16 @@
-////////////////////////////// 
+//////////////////////////////
 //  7
 //  Crea una función llamada convierteEurosEnPesetas
 //  de modo que al ser ejecutada con un 1 en su primer argumento
 //  debe devolver 168 ( 1 euro son 168 pesetas;  2 euros son 336)
-//  ejemplo:  
+//  ejemplo:
 //  convierteEurosEnPesetas(1) === 168 // true
 
 // Aquí tu código
-
+  let convierteEurosEnPesetas = (cantidad) => {
+    let devolucion = cantidad * 168;
+    return devolucion;
+  }
 
 // Hasta aquí
 

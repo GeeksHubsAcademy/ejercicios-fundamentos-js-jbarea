@@ -33,3 +33,14 @@ let gente = [{
     },
 ]
 
+let arr = [];
+
+for (iter of gente){
+  //let inter = iter.nombre
+
+  if(iter.nombre.length===4){
+    arr.push(iter);
+  }
+}
+//arr = gente.filter(persona => persona.nombre.length===4);
+console.log(arr);

@@ -33,3 +33,12 @@ let gente = [{
         edad: 10
     },
 ]
+
+let arr = [];
+
+for (iter of gente){
+  if(iter.nombre[0]==='J'){
+    arr.push(iter);
+  }
+}
+console.log(arr);

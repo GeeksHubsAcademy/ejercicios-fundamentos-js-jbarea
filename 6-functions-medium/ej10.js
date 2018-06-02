@@ -13,7 +13,13 @@
 // Ha de pasar los test adjuntados.
 
 // Aquí tu código.  Desde aquí:
-const conCuantosParametrosMeHanEjecutado;
+let arr = [];
+
+const conCuantosParametrosMeHanEjecutado = function (...arr){
+  let tam = arr.length;
+  return tam;
+}
+
 // Hasta aquí.
 
 

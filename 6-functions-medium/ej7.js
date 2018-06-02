@@ -1,5 +1,5 @@
 // crea la función  sumaDesdeHasta
-// debe recibir dos parámetros tipo number, 
+// debe recibir dos parámetros tipo number,
 // y devolver la suma de los enteros desde el primero hasta el ultimo
 
 // Si los argumentos no son tipo number debe lanzar un Error con:
@@ -12,7 +12,13 @@
 let sumaDesdeHasta = (desde, hasta) => {
     let sumatorio = 0;
     // Aquí tu código.  Desde aquí:
-
+    if ((typeof desde != 'number') && (typeof hasta !='number')){
+      throw new Error('Debo recibir números');
+    }else{
+      for (let i=desde;i<=hasta;i++){
+        sumatorio += i;
+      }
+    }
     // Hasta aquí.
     return sumatorio;
 }

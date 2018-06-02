@@ -1,4 +1,4 @@
-////////////////////////////// 
+//////////////////////////////
 //  9
 //  Crear una función llamada muestraPorConsolaEurosEnPesetas
 //  que NO de DEVOLVER nada (devolver undefined)
@@ -9,7 +9,15 @@
 //  throw new Error('muestraPorConsolaEurosEnPesetas debe recibir un number');
 
 // Aquí tu código
-
+  let muestraPorConsolaEurosEnPesetas = (cantidad) => {
+    if (typeof cantidad != 'number'){
+      throw new Error('muestraPorConsolaEurosEnPesetas debe recibir un number');
+    }else{
+      let devolver = cantidad * 168;
+      console.log(devolver);
+      return undefined;
+    }
+  }
 
 // Hasta aquí
 
@@ -35,8 +43,8 @@ try {
     muestraPorConsolaEurosEnPesetas(true);
     muestraPorConsolaEurosEnPesetas();
     console.log('suspendes: muestraPorConsolaEurosEnPesetas debe lanzar un error si no recibe un número');
-    
+
 } catch (error) {
     console.log('apruebas');
-        
+
 }
